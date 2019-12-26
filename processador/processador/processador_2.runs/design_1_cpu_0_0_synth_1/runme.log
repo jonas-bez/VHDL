@@ -1,0 +1,516 @@
+
+*** Running vivado
+    with args -log design_1_cpu_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_cpu_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_cpu_0_0.tcl -notrace
+Command: synth_design -top design_1_cpu_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 31720 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1261.488 ; gain = 82.996 ; free physical = 535 ; free virtual = 12797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_cpu_0_0' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/bd/design_1/ip/design_1_cpu_0_0/synth/design_1_cpu_0_0.vhd:85]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'cpu' declared at '/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/cpu.vhd:13' bound to instance 'U0' of component 'cpu' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/bd/design_1/ip/design_1_cpu_0_0/synth/design_1_cpu_0_0.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'cpu' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/cpu.vhd:53]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'control_unit' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/control_unit.vhd:45]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'controller_FSM' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/controller_FSM.vhd:51]
+	Parameter N bound to: 16 - type: integer 
+WARNING: [Synth 8-614] signal 's_jmp_op' is read in the process but is not in the sensitivity list [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/controller_FSM.vhd:86]
+WARNING: [Synth 8-614] signal 'flag_z' is read in the process but is not in the sensitivity list [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/controller_FSM.vhd:86]
+WARNING: [Synth 8-614] signal 'flag_c' is read in the process but is not in the sensitivity list [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/controller_FSM.vhd:86]
+WARNING: [Synth 8-3848] Net dout_in in module/entity controller_FSM does not have driver. [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/controller_FSM.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'controller_FSM' (1#1) [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/controller_FSM.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'registrador' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:16]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'registrador' (2#1) [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'constant_adder' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/constant_adder.vhd:12]
+	Parameter N bound to: 16 - type: integer 
+	Parameter VAL bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'constant_adder' (3#1) [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/constant_adder.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'registrador__parameterized0' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:16]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'registrador__parameterized0' (3#1) [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:16]
+INFO: [Synth 8-226] default block is never used [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/control_unit.vhd:142]
+WARNING: [Synth 8-3848] Net s_immed in module/entity control_unit does not have driver. [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/control_unit.vhd:63]
+WARNING: [Synth 8-3848] Net s_ula_op in module/entity control_unit does not have driver. [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/control_unit.vhd:69]
+WARNING: [Synth 8-3848] Net s_flag_status in module/entity control_unit does not have driver. [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/control_unit.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (4#1) [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/control_unit.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'datapath' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/datapath.vhd:64]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ula' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/ula.vhd:17]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ula' (5#1) [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/ula.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'register_file' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/register_file.vhd:32]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register_file' (6#1) [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/register_file.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'mux_2x1' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/mux_2x1.vhd:33]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_2x1' (7#1) [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/mux_2x1.vhd:33]
+INFO: [Synth 8-226] default block is never used [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/datapath.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'reg_sp' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_sp.vhd:16]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_sp' (8#1) [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_sp.vhd:16]
+INFO: [Synth 8-226] default block is never used [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/datapath.vhd:151]
+INFO: [Synth 8-226] default block is never used [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/datapath.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'constant_sub' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/constant_sub.vhd:12]
+	Parameter N bound to: 16 - type: integer 
+	Parameter VAL bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'constant_sub' (9#1) [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/constant_sub.vhd:12]
+INFO: [Synth 8-226] default block is never used [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/datapath.vhd:177]
+INFO: [Synth 8-226] default block is never used [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/datapath.vhd:185]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (10#1) [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/datapath.vhd:64]
+WARNING: [Synth 8-3848] Net s_dbg_state in module/entity cpu does not have driver. [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/cpu.vhd:99]
+INFO: [Synth 8-256] done synthesizing module 'cpu' (11#1) [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/cpu.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'design_1_cpu_0_0' (12#1) [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/bd/design_1/ip/design_1_cpu_0_0/synth/design_1_cpu_0_0.vhd:85]
+WARNING: [Synth 8-3331] design controller_FSM has unconnected port dout_in[3]
+WARNING: [Synth 8-3331] design controller_FSM has unconnected port dout_in[2]
+WARNING: [Synth 8-3331] design controller_FSM has unconnected port dout_in[1]
+WARNING: [Synth 8-3331] design controller_FSM has unconnected port dout_in[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1304.020 ; gain = 125.527 ; free physical = 544 ; free virtual = 12808
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1304.020 ; gain = 125.527 ; free physical = 545 ; free virtual = 12809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1312.023 ; gain = 133.531 ; free physical = 545 ; free virtual = 12809
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-802] inferred FSM for state register 'current_s_reg' in module 'controller_FSM'
+INFO: [Synth 8-5544] ROM "Rd_wr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_s" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "out_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                00000000000000001 |                            00000
+                   fetch |                00000000000000010 |                            00001
+                  decode |                00000000000000100 |                            00010
+                exec_nop |                00000000000001000 |                            00011
+               exec_halt |                00000000000010000 |                            00100
+                exec_mov |                00000000000100000 |                            00101
+              exec_store |                00000000001000000 |                            00111
+               exec_load |                00000000010000000 |                            00110
+                exec_ula |                00000000100000000 |                            01000
+                exec_jmp |                00000001000000000 |                            01111
+              espera_rom |                00000010000000000 |                            10000
+                 d_io_in |                00000100000000000 |                            01011
+             d_io_out_rm |                00001000000000000 |                            01100
+             d_io_out_im |                00010000000000000 |                            01101
+                  sp_psh |                00100000000000000 |                            01001
+              espera_pop |                01000000000000000 |                            01110
+                  sp_pop |                10000000000000000 |                            01010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_s_reg' using encoding 'one-hot' in module 'controller_FSM'
+WARNING: [Synth 8-327] inferring latch for variable 's_jmp_op_reg' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/controller_FSM.vhd:670]
+WARNING: [Synth 8-327] inferring latch for variable 's_dbg_state_reg' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/controller_FSM.vhd:139]
+WARNING: [Synth 8-327] inferring latch for variable 'sp_mux_reg' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/controller_FSM.vhd:105]
+WARNING: [Synth 8-327] inferring latch for variable 'ld_sp_reg' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/controller_FSM.vhd:106]
+WARNING: [Synth 8-327] inferring latch for variable 'mux_sp_is_reg' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/controller_FSM.vhd:107]
+WARNING: [Synth 8-327] inferring latch for variable 'mux_in_reg' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/controller_FSM.vhd:108]
+WARNING: [Synth 8-327] inferring latch for variable 'mux_rm_im_reg' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/controller_FSM.vhd:109]
+WARNING: [Synth 8-327] inferring latch for variable 's_flag_c_reg' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/control_unit.vhd:154]
+WARNING: [Synth 8-327] inferring latch for variable 's_flag_z_reg' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/control_unit.vhd:154]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/imports/arqs_processador/ula.vhd:35]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1328.039 ; gain = 149.547 ; free physical = 526 ; free virtual = 12792
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 4     
+	   3 Input     16 Bit       Adders := 2     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 12    
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  44 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 7     
+	  17 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 2     
+	  17 Input      3 Bit        Muxes := 3     
+	  17 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	  17 Input      1 Bit        Muxes := 12    
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module controller_FSM 
+Detailed RTL Component Info : 
++---Muxes : 
+	  44 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	  17 Input     16 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 2     
+	  17 Input      3 Bit        Muxes := 3     
+	  17 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 12    
+Module registrador 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module constant_adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+Module registrador__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module control_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module ula 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Muxes : 
+	   9 Input      1 Bit        Muxes := 1     
+Module register_file 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module mux_2x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module reg_sp 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module constant_sub 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+Module datapath 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 1     
+Module cpu 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element U0/Control_Unit_0/PC/q_reg was removed.  [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+WARNING: [Synth 8-6014] Unused sequential element U0/Datapath_0/reg_sp/q_reg was removed.  [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_sp.vhd:23]
+DSP Report: Generating DSP U0/Datapath_0/ULA/multOp, operation Mode is: A*B.
+DSP Report: operator U0/Datapath_0/ULA/multOp is absorbed into DSP U0/Datapath_0/ULA/multOp.
+INFO: [Synth 8-3332] Sequential element (U0/Control_Unit_0/controlador/mux_rm_im_reg) is unused and will be removed from module design_1_cpu_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[15]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[15]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[14]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[14]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[13]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[13]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[12]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[12]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[11]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[11]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[10]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[10]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[9]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[9]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[8]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[8]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[7]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[7]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[6]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[6]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[5]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[5]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[4]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[4]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[3]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[3]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[2]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[2]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[1]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[1]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+INFO: [Synth 8-3332] Sequential element (U0/Datapath_0/reg_out/q_reg[0]) is unused and will be removed from module design_1_cpu_0_0.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/Datapath_0/reg_out/q_reg[0]/Q' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.srcs/sources_1/new/reg_out.vhd:23]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:01:02 . Memory (MB): peak = 1489.164 ; gain = 310.672 ; free physical = 329 ; free virtual = 12620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ula         | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:01:02 . Memory (MB): peak = 1489.164 ; gain = 310.672 ; free physical = 329 ; free virtual = 12620
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:01:02 . Memory (MB): peak = 1489.164 ; gain = 310.672 ; free physical = 325 ; free virtual = 12616
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:01:04 . Memory (MB): peak = 1489.164 ; gain = 310.672 ; free physical = 325 ; free virtual = 12616
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:01:04 . Memory (MB): peak = 1489.164 ; gain = 310.672 ; free physical = 325 ; free virtual = 12616
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:01:04 . Memory (MB): peak = 1489.164 ; gain = 310.672 ; free physical = 325 ; free virtual = 12616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:01:04 . Memory (MB): peak = 1489.164 ; gain = 310.672 ; free physical = 325 ; free virtual = 12616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:01:04 . Memory (MB): peak = 1489.164 ; gain = 310.672 ; free physical = 325 ; free virtual = 12616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:01:04 . Memory (MB): peak = 1489.164 ; gain = 310.672 ; free physical = 325 ; free virtual = 12616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    28|
+|2     |DSP48E1 |     1|
+|3     |LUT1    |    11|
+|4     |LUT2    |    17|
+|5     |LUT3    |   139|
+|6     |LUT4    |    90|
+|7     |LUT5    |    75|
+|8     |LUT6    |   212|
+|9     |MUXF7   |     1|
+|10    |FDCE    |    16|
+|11    |FDPE    |     1|
+|12    |FDRE    |   168|
+|13    |FDSE    |    10|
+|14    |LD      |    28|
++------+--------+------+
+
+Report Instance Areas: 
++------+-------------------+----------------------------+------+
+|      |Instance           |Module                      |Cells |
++------+-------------------+----------------------------+------+
+|1     |top                |                            |   797|
+|2     |  U0               |cpu                         |   797|
+|3     |    Control_Unit_0 |control_unit                |   402|
+|4     |      IR           |registrador_7               |   102|
+|5     |      PC           |registrador_8               |    42|
+|6     |      REG_FLAGS    |registrador__parameterized0 |     6|
+|7     |      controlador  |controller_FSM              |   246|
+|8     |    Datapath_0     |datapath                    |   395|
+|9     |      RF           |register_file               |   284|
+|10    |        R0         |registrador                 |    16|
+|11    |        R1         |registrador_0               |    16|
+|12    |        R2         |registrador_1               |    16|
+|13    |        R3         |registrador_2               |   105|
+|14    |        R4         |registrador_3               |    16|
+|15    |        R5         |registrador_4               |    16|
+|16    |        R6         |registrador_5               |    16|
+|17    |        R7         |registrador_6               |    81|
+|18    |      ULA          |ula                         |    41|
+|19    |      reg_sp       |reg_sp                      |    70|
++------+-------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:01:04 . Memory (MB): peak = 1489.164 ; gain = 310.672 ; free physical = 325 ; free virtual = 12616
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 48 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:01:04 . Memory (MB): peak = 1489.164 ; gain = 310.672 ; free physical = 327 ; free virtual = 12618
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:01:04 . Memory (MB): peak = 1489.172 ; gain = 310.672 ; free physical = 327 ; free virtual = 12618
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  LD => LDCE: 28 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 24 Warnings, 48 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:01:08 . Memory (MB): peak = 1568.176 ; gain = 403.043 ; free physical = 303 ; free virtual = 12606
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.runs/design_1_cpu_0_0_synth_1/design_1_cpu_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:38 . Memory (MB): peak = 1938.344 ; gain = 370.168 ; free physical = 130 ; free virtual = 12243
+INFO: [Coretcl 2-1174] Renamed 18 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/jonas/Documentos/universidade/S5/SD/1_processador /final/processador/processador/processador_2.runs/design_1_cpu_0_0_synth_1/design_1_cpu_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_cpu_0_0_utilization_synth.rpt -pb design_1_cpu_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1938.344 ; gain = 0.000 ; free physical = 136 ; free virtual = 12241
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 18 15:13:14 2019...
