@@ -1,0 +1,95 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Mon Jun 24 13:39:11 2019
+| Host         : jonas-500R5L running 64-bit Ubuntu 16.04.4 LTS
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z010
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    28 |
+| Unused register locations in slices containing registers |    91 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             111 |           45 |
+| No           | No                    | Yes                    |               7 |            6 |
+| No           | Yes                   | No                     |              55 |           18 |
+| Yes          | No                    | No                     |              32 |            8 |
+| Yes          | No                    | Yes                    |              47 |           12 |
+| Yes          | Yes                   | No                     |              73 |           23 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------------------+----------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+
+|                          Clock Signal                          |                    Enable Signal                   |                           Set/Reset Signal                          | Slice Load Count | Bel Load Count |
++----------------------------------------------------------------+----------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+
+|  design_1_i/pdi_0/U0/controller/s_exec_loop_reg_i_2_n_0        |                                                    |                                                                     |                1 |              1 |
+|  design_1_i/pdi_0/U0/controller/s_control_brilho_reg_i_2_n_0   |                                                    |                                                                     |                1 |              1 |
+|  design_1_i/pdi_0/U0/controller/habilitar_contador_reg_i_2_n_0 |                                                    |                                                                     |                1 |              1 |
+|  design_1_i/pdi_0/U0/controller/op_red_reg_i_1_n_0             |                                                    |                                                                     |                1 |              1 |
+|  design_1_i/pdi_0/U0/controller/op_rgb_reg[1]_i_2_n_0          |                                                    |                                                                     |                1 |              2 |
+|  design_1_i/pdi_0/U0/controller/flag_salt_chili_reg[1]_i_1_n_0 |                                                    |                                                                     |                1 |              2 |
+|  design_1_i/pdi_0/U0/controller/g0_b0__1_n_0                   |                                                    |                                                                     |                1 |              2 |
+|  design_1_i/pdi_0/U0/controller/ram_we_reg_i_1_n_0             |                                                    |                                                                     |                2 |              3 |
+|  design_1_i/vga_driver_0/U0/freq_div0/temporal                 |                                                    |                                                                     |                3 |              4 |
+|  clk_in_IBUF_BUFG                                              | start_IBUF                                         | rst_IBUF                                                            |                3 |              4 |
+|  clk_in_IBUF_BUFG                                              |                                                    | rst_IBUF                                                            |                6 |              7 |
+|  design_1_i/vga_driver_0/U0/freq_div0/temporal                 | design_1_i/vga_driver_0/U0/eqOp6_in                | design_1_i/vga_driver_0/U0/v_cntr_reg0                              |                3 |             12 |
+|  design_1_i/vga_driver_0/U0/freq_div0/temporal                 |                                                    | design_1_i/vga_driver_0/U0/eqOp6_in                                 |                3 |             12 |
+|  clk_in_IBUF_BUFG                                              | design_1_i/pdi_0/U0/controller/s_exec_start        | rst_IBUF                                                            |                4 |             15 |
+|  design_1_i/pdi_0/U0/controller/d_con_reg[14]_i_2_n_0          |                                                    |                                                                     |                6 |             15 |
+|  clk_in_IBUF_BUFG                                              | design_1_i/pdi_0/U0/controller/ld_random           | rst_IBUF                                                            |                5 |             15 |
+|  clk_in_IBUF_BUFG                                              | design_1_i/pdi_0/U0/controller/ld_con              | rst_IBUF                                                            |                5 |             15 |
+|  design_1_i/pdi_0/U0/controller/d_random_reg[14]_i_2_n_0       |                                                    |                                                                     |                6 |             15 |
+|  design_1_i/pdi_0/U0/controller/mux_salt_chili_reg_i_1_n_0     |                                                    |                                                                     |                4 |             15 |
+|  clk_in_IBUF_BUFG                                              | design_1_i/pdi_0/U0/controller/cont_i              | rst_IBUF                                                            |                4 |             16 |
+|  clk_in_IBUF_BUFG                                              | design_1_i/pdi_0/U0/controller/s_exec_loop         | rst_IBUF                                                            |                4 |             16 |
+|  design_1_i/pdi_0/U0/controller/s_exec_loop_reg_i_1_n_0        |                                                    |                                                                     |                6 |             16 |
+|  design_1_i/pdi_0/U0/controller/brilho_reg[14]_i_1_n_0         |                                                    |                                                                     |                5 |             16 |
+|  design_1_i/vga_driver_0/U0/freq_div0/temporal                 |                                                    | design_1_i/vga_driver_0/U0/vga_red_reg[4]_i_1_n_0                   |                8 |             16 |
+|  clk_in_IBUF_BUFG                                              |                                                    |                                                                     |                6 |             17 |
+|  clk_in_IBUF_BUFG                                              | design_1_i/pdi_0/U0/controller/contador[0]_i_2_n_0 | design_1_i/pdi_0/U0/controller/contador0                            |                7 |             27 |
+|  clk_in_IBUF_BUFG                                              |                                                    | design_1_i/pdi_0/U0/controller/contador_de_pulsos_brilho[0]_i_1_n_0 |                7 |             27 |
+|  clk_in_IBUF_BUFG                                              | design_1_i/pdi_0/U0/controller/brilho2             |                                                                     |                8 |             32 |
++----------------------------------------------------------------+----------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     4 |
+| 2      |                     3 |
+| 3      |                     1 |
+| 4      |                     2 |
+| 7      |                     1 |
+| 12     |                     2 |
+| 15     |                     6 |
+| 16+    |                     9 |
++--------+-----------------------+
+
+
